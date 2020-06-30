@@ -1,0 +1,29 @@
+{
+    "name": "ChellyScrapes",
+    "version": "1.0",
+    "description": "Gets all the bitches",
+    "manifest_version": 2,
+
+    "incognito": "split",
+
+    "browser_action": {
+      "default_icon": "logo.png",
+      "default_popup": "popup.html"
+    },
+  
+    "permissions": [
+      "activeTab",
+      "https://careershift.com/*"
+    ],
+    "icons": {
+      "48": "logo.png"
+    },
+
+    "background":{
+      "scripts": [
+        "background.js"
+      ]
+    }
+
+   
+  }
