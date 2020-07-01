@@ -1,5 +1,4 @@
 
-
 function findAll(){
     var Leads = []
     var leads = Array.from(document.getElementsByClassName('meta'))
@@ -16,12 +15,6 @@ function findAll(){
     })
     chrome.runtime.sendMessage(Leads);
 }
-
-
-
-
-
-
 
 findAll();
 

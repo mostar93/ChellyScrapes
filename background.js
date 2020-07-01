@@ -5,11 +5,10 @@ window.addEventListener('load', function (evt) {
 });
 
 chrome.runtime.onMessage.addListener(function(response, sender, senderResponse) {
-    console.log(response)
+    
     function getCSVLinkElement(arr){
 
         var link = document.createElement("a");
-        // link.textContent = "Save as CSV";
         var image = document.createElement("img")
         image.setAttribute("src", "./download-button.svg");
         image.setAttribute("height", "30");
@@ -19,9 +18,7 @@ chrome.runtime.onMessage.addListener(function(response, sender, senderResponse) 
         link.href = encodeURI("data:text/csv,"+csv);
         link.appendChild(image)
       
-    
         return link;
-    
     }
 
     var el = getCSVLinkElement(response);
