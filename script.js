@@ -3,7 +3,7 @@
 function findAll(){
     var Leads = []
     var leads = Array.from(document.getElementsByClassName('meta'))
-    console.log(leads)
+
     Leads.push('-,Name,Email,Phone,Title,Sub-title,Region\n')
     leads.forEach(l => {
         var row = ''
